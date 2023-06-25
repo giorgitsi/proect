@@ -17,6 +17,7 @@ body{
 - Charcoal Grey: hsl(235, 18%, 26%)
 - Grey: hsl(231, 7%, 60%)
 - White: hsl(0, 0%, 100%) */
+/* Tomato: hsl(4, 100%, 67%) */
 
 .container{
     display: flex;
@@ -24,39 +25,117 @@ body{
     align-items: center;
     background-color: white;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 25px;
+    
+}
+
+.content{
+    margin-left: 25px;
+    margin-right: 20px;
+}
+
+.text{
+    margin-bottom: 30px;
+}
+
+.text, p{
+    opacity: 0.8;
+    margin-left: 3px;
 }
 
 h1{
-    margin-bottom: 30px;
+    margin-bottom: 23px;
     font-size: 60px;
 }
 
+
 .checkbox{
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-top: 10px;
     gap: 16px;
 }
 
-button{
-    padding: 13px 50px;
+
+
+.btn-grad {
+    background-image: linear-gradient(to right, #FF512F , #DD2476, #FF512F  );
     border: none;
-    background-color: hwb(340 32% 23%);
-    border-radius: 5px;
-    margin-top: 10px;
-    color: white;
+    padding: 20px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;            
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    margin-top: 7px;
+    cursor: pointer;
 }
 
+.btn-grad:hover {
+    background-position: Right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+
+}
+
+
+
 input{
-    padding:13px 55px ;
+    padding:17px  ;
+    width: 348px;
     border: 1px solid;
-    border-radius: 5px;
+    border-radius: 8px;
     margin-top: 20px;
+    margin-bottom: 13px;
+    cursor: pointer;
 }
 
 .content{
     margin-right: 40px;
 }
 
+.email-content{
+    margin-top: 45px;
+}
+
+.mobile-version-img{
+    display: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+
+}
+
+@media screen and (max-width:920px){
+body{
+    flex-direction: column;
+    /* align-items: center; */
+    background-color: white; 
+
+}
+
+.container{
+    flex-direction:column-reverse;
+    align-items: center;
+    padding: 0px;
+    
+    
+}
+
+.mobile-version-img{
+    display: block;
+    
+}
+
+
+.pc-version-img{
+    display: none;
+}
+
+}
 
